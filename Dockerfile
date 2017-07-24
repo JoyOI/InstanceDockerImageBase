@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install software-properties-common curl -y
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update
-RUN apt-get install gcc g++ nodejs fp-compiler python3 python3-psutil openjdk-9-jdk -y
+RUN apt-get install gcc g++ nodejs fp-compiler python3 python3-psutil openjdk-8-jdk -y
 
 RUN echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
