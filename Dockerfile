@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install software-properties-common curl -y
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update
-RUN apt-get install gcc g++ nodejs fp-compiler python3 python3-psutil openjdk-8-jdk mono-4.0 -y
+RUN apt-get install gcc g++ nodejs fp-compiler python3 python3-psutil openjdk-8-jdk mono-4.0 mono-mcs -y
 
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 RUN mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg 
