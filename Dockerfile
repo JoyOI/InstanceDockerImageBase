@@ -1,6 +1,6 @@
 FROM daocloud.io/ubuntu:16.04
 
-RUN sed -i 's/archive.ubuntu.com/cn.archive.ubuntu.com/g' /etc/apt/sources.list
+# RUN sed -i 's/archive.ubuntu.com/cn.archive.ubuntu.com/g' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install software-properties-common curl -y
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
